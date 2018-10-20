@@ -1,9 +1,7 @@
-const express = require('express')
+onst express = require('express')
 const app = express()
-const port = 3000 | process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'))
-
-/* ... */
 
 app.listen(port, () => console.log('Server ready at port: ' + port));
